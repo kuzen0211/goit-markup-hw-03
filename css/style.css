@@ -127,7 +127,8 @@ a {
 /* Hero */
 /* Тимчасовий фон */
 .hero {
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: #2f303a;
 
@@ -135,10 +136,8 @@ a {
 }
 
 .hero-title {
-  padding-top: 200px;
-  margin-bottom: 30px;
-
   color: #fff;
+  margin-bottom: 30px;
 
   font-style: normal;
   font-weight: 900;
@@ -209,7 +208,7 @@ button {
   letter-spacing: 0.03em;
 }
 
-.section-item > .list-item {
+.container .list-item {
   width: calc(100% - 90px / 4);
 }
 
@@ -226,8 +225,7 @@ button {
 }
 
 .section-title.list {
-  padding-bottom: 50px;
-
+  margin-bottom: 50px;
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -240,17 +238,14 @@ button {
 }
 
 /* Section 3 */
-
-.section.people > .section-title.list {
+.section.list {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
 }
-
-.section.people > .section-title {
-  margin-bottom: 50px;
-}
-
 .work-list {
+  margin-bottom: 10px;
+
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -259,20 +254,17 @@ button {
   letter-spacing: 0.03em;
 }
 
-.work-title {
-  margin-bottom: 30px;
+.section.people .section-title {
+  padding-top: 94px;
+}
 
+.work-title {
   color: var(--primeri-text-color);
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-}
-
-.work-list {
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .section.people {
@@ -289,12 +281,21 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.card-people {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* Footer */
 /* Тимчасовий фон */
+.section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .logo.down {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   color: var(--address-color);
 
@@ -333,14 +334,6 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.address-nav {
-  padding-bottom: 57px;
-}
-
-.address-link:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 /* Hidden text h1 */
 .hero-nav.visually-hidden {
   position: absolute;
@@ -355,13 +348,21 @@ footer {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.address-mail {
+  margin-bottom: 9px;
+}
+
 /* Portfolio */
 /* Navigation buttons */
+.container.button-elements {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 
 .radio-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
 }
 
 .navigation {
@@ -387,10 +388,23 @@ footer {
 }
 
 /* Work */
-.work .item {
-  padding-top: 20px;
-  margin-bottom: 4px;
+.wirk-card {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: 100%;
+  flex-basis: calc(100% / 3);
+}
+
+.work-element {
+  padding: 20px 24px;
+}
+
+.work-element .item {
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -399,7 +413,7 @@ footer {
   letter-spacing: 0.06em;
 }
 
-.work .benefits {
+.work-element .benefits {
   color: var(--primeri-text-color);
 
   font-weight: 400;
@@ -412,19 +426,16 @@ footer {
   color: #fff;
 }
 
-.work {
-  display: flex;
-  flex-wrap: wrap;
+.work-slide {
+  border: 1px solid rgba(238, 238, 238, 1);
+  box-sizing: border-box;
+  width: 370px;
 }
 
 .work-slide:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.work-slide:not(:nth-last-child(n + 7)) {
+.work-slide:not(:nth-child(n + 7)) {
   margin-bottom: 30px;
-}
-
-.work-slide {
-  border-radius: ;
 }
