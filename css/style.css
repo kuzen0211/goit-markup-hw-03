@@ -129,21 +129,21 @@ a {
 .hero {
   max-width: 1600px;
   padding-top: 200px;
-  padding-bottom: 280px;
-  padding-left: 452px;
-  padding-right: 452px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 
   background-color: #2f303a;
-
   text-align: center;
 }
 
 .hero-title {
   color: #fff;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
+  width: 696px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -362,14 +362,14 @@ footer {
 
 /* Portfolio */
 /* Navigation buttons */
-.container.button-elements {
+.container.portfolio {
   padding-top: 94px;
-  margin-bottom: 50px;
 }
 
 .radio-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .navigation {
@@ -395,11 +395,6 @@ footer {
 }
 
 /* Work */
-.work-card {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .work {
   display: flex;
   flex-wrap: wrap;
